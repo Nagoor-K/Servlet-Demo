@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<display-name>Google Hello web</display-name>
+
+<servlet>
+<servlet-name>abc</servlet-name>
+<servlet-class>com.servlet.GuiceServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>abc</servlet-name>
+<url-pattern>/add</url-pattern>
+</servlet-mapping>
+</web-app>

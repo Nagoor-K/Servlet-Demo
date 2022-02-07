@@ -1,0 +1,46 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories{
+	jcenter()
+	mavenCentral()
+}
+
+dependencies{
+	// https://mvnrepository.com/artifact/org.postgresql/postgresql
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.23'
+	
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.5.5.Final'
+	
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache
+	implementation group: 'org.hibernate', name: 'hibernate-ehcache', version: '5.5.5.Final'
+	
+	// https://mvnrepository.com/artifact/net.sf.ehcache/ehcache
+	implementation group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.9.2'
+	
+	// https://mvnrepository.com/artifact/com.google.inject/guice
+	implementation group: 'com.google.inject', name: 'guice', version: '4.2.2'
+	
+	// https://mvnrepository.com/artifact/com.google.inject.extensions/guice-servlet
+	implementation group: 'com.google.inject.extensions', name: 'guice-servlet', version: '5.0.1'
+	
+	// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
+
+
+
+	
+
+	
+
+	
+	
+	
+}
+task hello{
+	doLast{
+		println 'Hello nagoor from gradle'
+	}
+}
