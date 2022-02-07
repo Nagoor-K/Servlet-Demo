@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-<display-name>Google Hello web</display-name>
-
-<servlet>
-<servlet-name>abc</servlet-name>
-<servlet-class>com.servlet.GuiceServlet</servlet-class>
+<welcome-file-list>  
+   <welcome-file>index.html</welcome-file>   
+ </welcome-file-list>
+ 
+ <servlet>
+   <servlet-name>addStudent</servlet-name>
+   <servlet-class>com.servlet.addStudent</servlet-class>
 </servlet>
 
 <servlet-mapping>
-<servlet-name>abc</servlet-name>
-<url-pattern>/add</url-pattern>
+   <servlet-name>addStudent</servlet-name>
+   <url-pattern>/addStudent</url-pattern>
 </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>deleteStudent</servlet-name>
+   <servlet-class>com.servlet.deleteStudent</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>deleteStudent</servlet-name>
+   <url-pattern>/deleteStudent</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>viewStudent</servlet-name>
+   <servlet-class>com.servlet.viewStudent</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>viewStudent</servlet-name>
+   <url-pattern>/viewStudent</url-pattern>
+</servlet-mapping>
+  
+  
 </web-app>
